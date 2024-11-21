@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+    <script src="../bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <form class="row g-3 was-validated" novalidate>
+        <div class="col-md-4">
+            <label for="valid" class="form-label">First Name</label>
+            <input type="text" class="form-control is-valid" required>
+            <div class="valid-feedback">
+                FirstName Valid
+            </div>
+            <div class="invalid-feedback">
+                Please Enter First Name
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <label for="valid" class="form-label">Last Name</label>
+            <input type="text" class="form-control is-valid" required>
+            <div class="valid-feedback">
+                LastName Valid
+            </div>
+            <div class="invalid-feedback">
+                Please Enter Last Name
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <select class="form-select is-valid" required>
+                <option value="" selected disabled >Choose...</option>
+                <option value="India">India</option>
+            </select>
+            <div class="invalid-feedback">
+                Please Select a valid Country
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="form-check">
+                <input class="form-check-input is-valid" type="checkbox" required>
+                <label for="">Agree to Terms & Conditions</label>
+                <div class="invalid-feedback">
+                    You must Agree Before Submitting
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <button class="btn btn-warning" type="submit">Click</button>
+
+        </div>
+    </form>
+</body>
+</html>

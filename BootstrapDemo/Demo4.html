@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+    <script src="../bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            padding: 0 16px;
+        }
+
+        [class*="col-"] {
+            color: whitesmoke;
+            padding: 1em 0;
+            background-color: lightcoral;
+            border: 1px solid powderblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"> 
+        <h2>Multiple Grid Example</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <p>COL-LG-6</p>
+            </div>
+            <div class="col-lg-2">
+                <p>COL-LG-2</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-5 col-sm-4 col-3">
+                <span class="d-none d-xl-block">Extra Large 4</span>
+                <span class="d-none d-lg-block d-xl-none">Large 4</span>
+                <span class="d-none d-md-block d-lg-none">Medium 5</span>
+                <span class="d-none d-sm-block d-md-none">Small 4</span>
+                <span class="d-block d-sm-none">Xtra Small 3</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
